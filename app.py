@@ -6,7 +6,7 @@ import numpy as np
 import sklearn
 app = Flask(__name__)
 model = pickle.load(open('decision_tree_regression_model.pkl', 'rb'))
-@app.route('/home',methods=['GET'])
+@app.route('/',methods=['GET'])
 def Home():
     return render_template('home.html')
 
